@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="smallhero">
+            <br>
+            <br>
+            <br>
+            <form name="/mail" method="post" action="/mail">
+                <div class="container">
+                  <h2>Subscribe to the Newsletter</h2>
+                </div>
+                <div class="container" style="background-color:white">
+                  <input type="text" placeholder="Email address" name="mail" required>
+                </div>
+              
+                <div class="container">
+                  <input type="submit" value="Subscribe">
+                </div>
+              </form> 
+
+
+              <br>
+          
+        </div>
+
+    </div>
+
+</body>
+<footer>    
+    <div class="pressing">
+      <p style="font-size: 10px;">This website and my project are meant to inform the public, especially my school, about the danger of metadata. All information I gather will not be sold to advertisers or other companies or people. There are also no adds on the page.</p>    </div>
+</footer>
+</html>

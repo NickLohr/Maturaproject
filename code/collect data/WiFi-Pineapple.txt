@@ -1,0 +1,12 @@
+iw phy phy0 interface add mon0 type monitor
+iw phy phy1 interface add mon1 type monitor
+iw dev wlan0 del
+iw dev wlan0-1 del
+iw dev wlan1 del
+ifconfig mon0 up
+ifconfig mon1 up
+iw dev mon0 set channel 1
+iw dev mon1 set channel 100
+mount /dev/sda1 /mnt/
+tcpdump -G 300 -s 65535 -w /mnt/mon0%s.pcap -i mon0 &
+tcpdump -G 300 -s 65535 -w /mnt/mon1%s.pcap -i mon1 &s

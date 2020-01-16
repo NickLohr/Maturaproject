@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="titel">Be aware</h1>
+        <a href="Demo">Demo</a>
+        <a href="LinksTipps">Tipps&Links</a>
+    </nav>
+    <div class="hero">
+        <div class="smallhero">
+            <h2 class="hero-title">DEMO!</h2>
+            <form action="states" method="POST" enctype="multipart/form-data">
+                <p class = "hero-text">For the demo you need to enter the mac-address of your phone</p>
+                <input  type="text" name="macaddress" required=true/>
+                <input type = "submit"/>
+                
+            </form>
+            <a href="/whatisamac">What is a mac? And where do I find it?</a>
+        </div>
+    </div>
+
+</body>
+<footer>    
+    <div class="pressing">
+        <p>This website and my project are meant to inform the public especially my school about the danger of metadata. All information I gather will not be sold to advertisers or other companies or people. There are also no adds on the page.</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,50 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+\title{\normalfont \normalsize \textsc{KSZ, Kantonsschule Zug} \\ [25pt]
+\huge Questioning \\
+}
+\author{Nicolà Lohr}
+
+\date{\normalsize\today}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Main Question}
+How much can I find out about the people at the school just with metadata?
+\section{Description}
+
+The plan is to analyze the data I get from the informatics. The goal then is to find out as many habits as possible from different students and teachers. By then I should be able to tell who goes with whom to the mensa at what time. With the timetable, it should be possible to find out which device to which class belongs. Maybe even which gender or name. 
+
+\section{Steps to the goal}
+\begin{enumerate}
+	\item Track myself with all data
+	\item Track my friend / find out my friends with all data 
+	\item Track all devices on the network with all data
+	\item Code a program which does the tracking on its own
+	\begin{enumerate}
+	\item It should have the input of a Mac-Address
+	
+	\item It should put out:
+	\begin{enumerate}
+	\item If it is a student or a teacher
+	\item In which class they are
+	\item How long they spend in the restroom
+	\item (optional) With live data tell where the person is.
+	\item etc.
+	\end{enumerate}
+	\end{enumerate}
+	\item (optional) Remove the information of the timetable
+	\item (optional) Make my own data with WiFi-scanning and remove so all dependence from internal information
+	\item (optional) Make posters to raise awareness
+\end{enumerate}
+\section{Time-Plan}
+I am going to start after the winter-break of 2018-2019 with the analyzing with data. In the next four week I am going to look what is possible with this data and also look how exact I can track myself. For that I am already using python to simplify the work. Then from the sports-holiday to the spring break I am going to look at my interaction with other people, find out which mac-addresses belong to my classmates and test this. Following on that I am going to start with more or less random mac-addresses and try to find all information about them I can get. After that I am going to look for different method of how to track mac-addresses not just manually but also automatic and how to go from mac-addresses to a name or at least to as many information as possible. I am going to try it with hard coded rules but also with a tensorflow model as soon as I have enough data-points. 
+\end{document}

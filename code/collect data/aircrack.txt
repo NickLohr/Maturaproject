@@ -1,0 +1,5 @@
+mount -t vfat /dev/sda1 /mnt
+airmon-ng start wlan1
+tcpdump -i wlan1mon -s 65535 -w /mnt/fileX.pcap
+airmon-ng stop wlan1mon
+umount /mnt/
